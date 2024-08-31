@@ -1,23 +1,25 @@
 '''
-INPUT
-ABC
-OUTPUT
-ADBECFGH
+9--> 1001 & 0001==>1
+10-->1010 & 0001==>0
+1001-->1011=11
+11-->1011
+12-->1100
+
+
+1001
+0001
+------
+1000
+
+TOGGLE THE KTH BIT OF NUMBER
+using bitwise XOR(^)
 '''
-s=input()
-t=input()
-res=''
-i=0
-while i<len(s) or i<len(t):
-    if i<len(s):
-        res+=s[i]
-    if i<len(t):
-        res+=t[i]
-    i+=1
-print(res)
+n=int(input())
+k=int(input())
+r=n^(1<<(k-1))
+print(r)
 
 
-
-abc
-defgh
-adbecfgh
+9
+2
+11

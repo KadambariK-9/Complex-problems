@@ -1,18 +1,10 @@
 '''
-INPUT
-11101111011111
-OUTPUT
-CDE
+binary if we use odd no  & 1  output is 1
+even & 1==0
 '''
-s=input()
-res=''
-l=s.split('0')
-for i in l:
-    res+=chr(i.count('1')+64)
-print(res)
-
-
-
-
-11101101111
-CBD
+#find even or odd using bitwise
+n=int(input())
+if(n&1):
+    print('odd')
+else:
+    print('even')

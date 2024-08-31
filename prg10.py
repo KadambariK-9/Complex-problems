@@ -1,18 +1,90 @@
 '''
-INPUT
-321
-OUTPUT 380
-'''
-s=input()
-sum=0
-for i in range(len(s)):
-    for j in range(i,len(s)):
-        sum+=int(s[i:j+1])
-        print(sum)
-print(sum)
+Q. WHAT IS THE OUTPUT OF FOLLOWING PSEUDOCODES:
+INTEGERA,B,C
+SET A=2,B=6,C=8
+A=(10+9)+C
+IF ((C+B)>(A+C)).......14>35
+        A=B+C
+        B=B+B
+END IF
+PRINT A+B+C
+ANS  41
+
+
+Q.WHAT IS THE OUTPUT OF FOLLOWING PSEUDOCODES FOR A=0,B=2,C=10
+INTEGER FUNN(INTEGER A,INTEGER B,INTEGER C)
+B=7+A/////7
+A=(A+C)+A/////10
+B=(B+B)+C/////24
+C=1+B/////25
+RETURN A+B+C
+
+ANS=59
+
+
+Q. WHAT IS THE OUTPUT OF PSEUDOCODES
+INT A[5]={1,2,3,4,5};
+INT P,Q,R;
+P=++A[1]//////
+Q=A[1]++;
+R=A[P++]
+PRINT P,Q,R
+
+
+
+ANS 4 3 4
+
+
+
+
+Q. WHAT IS THE OUTPUT
+INTEGER PP,QQ,RR
+SET PP=0,QQ=6,RR=7
+PP=RR+PP
+PP=(RR&4)^RR
+IF((QQ&PP&RR)<(RR&QQ))
+IF((QQ^PP)<(RR+Q))
+RR=(3+1)^PP
+END IF
+END IF
+PRINT PP+QQ+RR
+ANS   16
+
+
+
+Q. WHAT IS THE OUTPUT
+INTEGER X,Y
+SET  X=15,Y=12
+Y=X-1
+DO{
+PRINT X
+X=Y+(X-2)
+}
+WHILE(X<40)
+END DO WHILE
+ANS 15 27 39
+
+
+Q.
+INTEGER VALUE,N
+SET VALUE=1,N=45
+WHILE(VALUE LESS THAN EQUAL TO N)
+    VALUE=VALUE<<1
+END LOOP
+PRINT VALUE
+ANS  64
+
 
 '''
-321
-380
+
+
 '''
-    
+
+
+
+
+
+
+
+
+

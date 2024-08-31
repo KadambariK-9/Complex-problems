@@ -1,21 +1,37 @@
 '''
 INPUT
-3 2 11 7 6 5 6 1
-OUTPUT
-2 1 7 6 5 1 1 -1
+10 20 30 40 50 60
+6
+OUTPUT 120
+INPUT 21 24 67 13 24 27
+OUTPUT 4
 '''
-a=[int(x) for x in input().split()]
-#a=list(map(int,input().split()))
-l=[]
-for i in range(len(a)):
-    for j in range(i+1,len(a)):
-        if a[j] <a[i]:
-            l.append(a[j])
-            break
-    else:
-        l.append(-1)
-print(*l)
+a=list(map(int,input().split()))
+a.reverse()
+n=int(input())
+s=0
+for i in range(n):
+    print(i,'',a[i])
+    if i%2==0:
+        s+=a[i]
+print(s)
 
 
-3 2 11 7 6 5 6 1
-2 1 7 6 5 1 1 -1
+10 20 30 40 50 60
+6
+0  60
+1  50
+2  40
+3  30
+4  20
+5  10
+120.....................ans
+
+
+
+
+
+
+
+
+

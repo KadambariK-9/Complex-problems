@@ -1,18 +1,18 @@
 '''
-INPUT 4ac52
-OUTPUT 40
-
-INPUT 2xy5r8
-OUTPUT 80
+Input
+abd
+aabccad
+output 4
 '''
-
 a=input()
-s=1
-for i in a:
-    if i.isdigit():
-        s=s*int(i)
-print(s)
+s=input()
+l=list(s)
+for i in l:
+    if i in a:
+        l.remove(i)
+print(len(l))
 
 
-4as6
-24
+abd
+aabccad
+4
