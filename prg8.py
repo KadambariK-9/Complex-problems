@@ -1,25 +1,39 @@
 '''
-9--> 1001 & 0001==>1
-10-->1010 & 0001==>0
-1001-->1011=11
-11-->1011
-12-->1100
+N=4
+1
+2 3
+4 5 6
+7 8 9 10
+
+n=int(input())
+c=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(c,end='')
+        c+=1
+    print()
 
 
-1001
-0001
-------
-1000
-
-TOGGLE THE KTH BIT OF NUMBER
-using bitwise XOR(^)
+4
+1
+23
+456
+78910
 '''
 n=int(input())
-k=int(input())
-r=n^(1<<(k-1))
-print(r)
+c=65
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(chr(c),end='')
+        c+=1
+    print()
 
 
-9
-2
-11
+
+
+4
+A
+BC
+DEF
+GHIJ
+

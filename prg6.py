@@ -1,24 +1,24 @@
 '''
-INPUT
-APPLES
-A
-P
-OUTPUT
-PAALES
+INPUT 43
+OUTPUT YES
+INPUT 123
+OUTPUT NO
 '''
-a=input()
-ch1=input()
-ch2=input()
-l=list(a)
-for i in range(len(l)):
-    if l[i]==ch1:
-        l[i]=ch2
-    elif l[i]==ch2:
-        l[i]=ch1
-print(''.join(l))
+n=int(input())
+k=str(n)
+sum=0
+for i in k:
+    sum+=int(i)
+for i in range(2,sum//2):
+    if sum%i==0:
+        print('NO')
+        break
+    else:
+        print('YES')
 
 
-apples
-a
-p
-paales
+43
+YES
+
+123
+NO

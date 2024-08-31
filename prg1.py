@@ -1,20 +1,31 @@
 '''
+NEXT DECREASING ELEMENT
 INPUT
-6(N)
-8 10 6 2 9 7
-OUTPU 3
+7
+5 6 4 5 2 3 4
+OUTPUT
+2
+INPUT
+5
+5 4 3 2 1
+OUTPUT
+4
 '''
-a=[int(x) for x in input().split()]
-s=a[-1]
-c=1
-i=len(a)-2
-while i>=0:
-    if a[i]>s:
+n=int(input())
+a=list(map(int,input().split()))
+c=0
+for i in range(n-1):
+    if a[i+1]<a[i]:
         c+=1
-        s=a[i]
-    i-=1
 print(c)
 
 
-8 10 6 2 9 7
-3
+
+7
+5 6 4 5 2 3 4
+2
+
+
+5
+5 4 3 2 1
+4

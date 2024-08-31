@@ -1,22 +1,27 @@
 '''
 INPUT
-7
+8
+1 2 3 4 4 5 5 5
 OUTPUT
-3
-
-l=[1]
-c=0
-n=int(input())
-l=[2**i for i in range(1,(n//2)+1)]
-for i in range(1,n+1):
-    if i in l:
-        c+=1
-print(c)
+2
+INPUT
+5
+5 5 5 5 5
+OUTPUT
+0
 '''
 n=int(input())
-c=str(bin(n))
-print(c.count('1'))
+a=[int(x) for x in input().split()]
+m=a[-1]
+for i in range(n-1,0,-1):
+    if a[i]<m:
+        m=a[i]
+        print(a.count(a[i]))
+        break
+else:
+    print(0)
 
 
-7
-3
+8
+1 2 3 4 4 5 5 5
+2

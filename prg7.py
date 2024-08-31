@@ -1,10 +1,30 @@
 '''
-binary if we use odd no  & 1  output is 1
-even & 1==0
+INPUT
+4
+OUTPUT 1
+INPUT 5
+OUTPUT 2
 '''
-#find even or odd using bitwise
 n=int(input())
-if(n&1):
-    print('odd')
-else:
-    print('even')
+c=0
+for i in range(1,n+1):
+    k=str(bin(i))[2:]
+    l=list(k)
+    for i in range(len(l)):
+        if l[i]=='0':
+            l[i]='1'
+        elif l[i]=='1':
+            l[i]=2
+    sum=0
+    for i in l:
+        sum+=int(i)
+    if sum%2==1:
+        c+=1
+print(c)
+
+
+4
+1
+
+5
+2

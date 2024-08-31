@@ -1,25 +1,24 @@
 '''
-INPUT
-7
-5 6 4 5 2 3 4
-OUTPUT
-2
-INPUT
+toggling all bits
+constraints  1<=n<=100
+input
+10
+output
 5
-5 4 3 2 1
-OUTPUT 4
+note use only bitwise operators
+
 '''
+'''
+INPUT 10
+OUTPUT 5'''
+from math import log2
 n=int(input())
-a=list(map(int,input().split()))
-c=0
-for i in range(n):
-    for j in range(i+1,n):
-        if a[i]>a[j]:
-            c+=1
-        break
-print(c)
+k=int(log2(n))+1
+res=n^((1<<k)-1)
+print(res)
 
-
+10
 5
-5 4 3 2 1
-4
+
+12
+3
